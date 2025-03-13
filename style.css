@@ -121,6 +121,7 @@ section {
 .contact,
 .skills {
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 #ch{
