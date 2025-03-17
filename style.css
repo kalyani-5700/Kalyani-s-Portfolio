@@ -11,9 +11,9 @@
     color: #fff;
 }
 
-
 body {
-    background: #0f0a0a;
+    /* background: hsl(var(--hue-color), 60%, 99%);; */
+    background-color: #ffffff4c;
     height: 100vh;
 }
 
@@ -26,24 +26,29 @@ html {
     position: fixed;
     left: 0;
     top: 0;
-    padding: 2rem 1rem ;
+    padding-left: 2rem;
+    padding-right: 2rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #AAB99A;
+    /* overflow:"hidden"; */
 }
 
 .sticky {
     border-bottom: 2px solid rgba(255, 255, 255, .1);
-    background: #0f0a0a;
+    background: #AAB99A;
 }
 
 .logo {
-    font-size: 2.9rem;
+    display: flex;
+    font-size: 3rem;
+    padding: 2rem 1rem;
     font-weight: 600;
     text-decoration: none;
-    color: #fff;
+    color:ghostwhite;
     transform: translateX(-100%);
     opacity: 0;
     animation: RightSlide 1s ease forwards;
@@ -66,7 +71,10 @@ html {
     font-size: 2.5rem;
     display: none;
 }
-
+.navbar{
+    display: flex;
+    flex-shrink: 0;
+}
 .navbar a {
     display: inline-block;
     font-size: 1.5rem;
@@ -108,7 +116,7 @@ html {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #ff00ee;
+    color: #FFEB00;
 }
 
 section {
@@ -116,6 +124,9 @@ section {
     min-height: 100vh;
 }
 
+.contact{
+    margin-top: -20rem;
+}
 .about,
 .education,
 .contact,
@@ -148,7 +159,7 @@ section {
 
 .text-content h1 {
     font-size: 5rem;
-    color: #fff;
+    color: #727D73;
     text-transform: capitalize;
     letter-spacing: .05rem;
     font-weight: 600;
@@ -167,8 +178,8 @@ section {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .7px #ff00ee;
-    background: linear-gradient(#ff00ee, #ff00ee);
+    -webkit-text-stroke: .7px #727D73;
+    background: linear-gradient(#AAB99A, #AAB99A);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -33rem 0;
@@ -200,7 +211,7 @@ section {
     top: 0;
     height: 100%;
     width: 0;
-    border-right: 2px solid #ff00ee;
+    border-right: 2px solid #727D73;
     transform: translateY(-100px);
     opacity: 0;
     animation: CursorSlide 6s linear infinite,
@@ -237,6 +248,7 @@ section {
     opacity: 0;
     animation: leftSlide 1s ease forwards;
     animation-delay: 1.4s;
+    color: #AAB99A;
 }
 
 @keyframes leftSlide {
@@ -287,7 +299,7 @@ section {
 .btn {
     height: 100%;
     width: 15rem;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.662);
     background: rgba(255, 255, 255, .1);
     border: .2rem solid rgba(255, 255, 255, .3);
     backdrop-filter: blur(5rem);
@@ -309,9 +321,10 @@ section {
     top: -100%;
     height: 300%;
     width: 100%;
-    background: linear-gradient(#0f0a0a, #ff00ee, #0f0a0a, #ff00ee);
+    background: linear-gradient(#727D73, white, #727D73, white);
     z-index: -1;
     transition: .5s ease;
+    
 }
 
 .btn:hover::before {
@@ -321,7 +334,7 @@ section {
 .cv {
     height: 100%;
     width: 15rem;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.662);
     background: rgba(255, 255, 255, .1);
     border: .2rem solid rgba(255, 255, 255, .3);
     backdrop-filter: blur(5rem);
@@ -347,7 +360,7 @@ section {
     top: -100%;
     height: 300%;
     width: 100%;
-    background: linear-gradient(#0f0a0a, #ff00ee, #0f0a0a, #ff00ee);
+    background: linear-gradient(#727D73, white, #727D73, white);
     z-index: -1;
     transition: .5s ease;
 }
@@ -368,7 +381,7 @@ section {
     padding: .8rem;
     margin: 0 .5rem;
     border-radius: 50%;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -398,7 +411,7 @@ section {
     top: -100%;
     height: 300%;
     width: 100%;
-    background: linear-gradient(#0f0a0a, #ff00ee, #0f0a0a, #ff00ee);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), white,rgba(0, 0, 0, 0.605), white);
     z-index: -1;
     transition: .5s ease;
 }
@@ -412,7 +425,7 @@ i:hover::after {
     background: rgba(255, 255, 255, .1);
     border: .2rem solid rgba(255, 255, 255, .3);
     border-radius: 50%;
-    filter: drop-shadow(0 0 8rem #ff00ee);
+    filter: drop-shadow(0 0 8rem rgb(0, 77, 0));
     animation: Scale 1s ease forwards;
     scale: 0;
     animation-delay: 2s;
@@ -445,6 +458,7 @@ i:hover::after {
     text-align: center;
     transform: translateY(-100px);
     opacity: 0;
+    color: #727D73;
 }
 
 section.start-animation .title {
@@ -464,7 +478,7 @@ section.start-animation .title {
 }
 
 .title span {
-    color: #ff00ee;
+    color: #727D73;
 }
 
 .about img {
@@ -473,7 +487,7 @@ section.start-animation .title {
     background: rgba(255, 255, 255, .1);
     border: .2rem solid rgba(255, 255, 255, .3);
     border-radius: 50%;
-    filter: drop-shadow(0 0 8rem #ff00ee);
+    filter: drop-shadow(0 0 8rem );
     scale: 0;
 }
 
@@ -499,6 +513,7 @@ section.start-animation .aboutImg {
     font-size: 2.6rem;
     transform: translatex(-100px);
     opacity: 0;
+    color: #727D73;
 }
 
 section.start-animation .text-content2 h2 {
@@ -522,6 +537,7 @@ section.start-animation .text-content2 h2 {
     margin: 2rem 0 3rem;
     transform: translatex(100px);
     opacity: 0;
+    color: grey;
 }
 
 section.start-animation .text-content2 p {
@@ -598,6 +614,7 @@ section.start-animation .column:nth-child(2) {
     margin: 2rem 0 1rem 1.96rem;
     transform: translateY(-100px);
     opacity: 0;
+    color: #AAB99A;
 }
 
 section.start-animation .column h2 {
@@ -606,7 +623,7 @@ section.start-animation .column h2 {
 }
 
 .box {
-    border-left: .2rem solid #ff00ee;
+    border-left: .2rem solid #D0DDD0;
 }
 
 .education-content {
@@ -615,7 +632,7 @@ section.start-animation .column h2 {
 
 .education-content .content {
     padding: 1.5rem;
-    border: .2rem solid #ff00ee;
+    border: .2rem solid #D0DDD0;
     background: rgba(255, 255, 255, .1);
     border-radius: .5rem;
     margin-bottom: 2rem;
@@ -630,16 +647,16 @@ section.start-animation .column h2 {
     height: 1.4rem;
     width: 1.4rem;
     border-radius: 50%;
-    background: #ff00ee;
+    background: #fff15a;
 }
 
 .content .year {
     font-size: 1.5rem;
-    color: #ff00ee;
+    color: darkgoldenrod;
 }
 
 .content .year i {
-    color: #ff00ee;
+    color: darkgoldenrod;
     font-size: 1.5rem;
     margin-left: .5rem;
 }
@@ -648,6 +665,7 @@ section.start-animation .column h2 {
     font-size: 1.7rem;
     letter-spacing: .05rem;
     margin: .5rem 0;
+    color: grey;
 }
 
 .content p {
@@ -670,6 +688,7 @@ section.start-animation .column h2 {
     margin-bottom: 1.5rem;
     opacity: 0;
     transform: translateY(-100px);
+    color: #AAB99A;
 }
 
 section.start-animation .skill-title {
@@ -686,7 +705,7 @@ section.start-animation .skill-title {
     height: 100%;
     width: 100%;
     padding: 8rem 4rem;
-    background: rgba(255, 255, 255, .1);
+    background: #c1d8c36d;
     border-radius: 1rem;
 }
 
@@ -718,20 +737,23 @@ section.start-animation .skill-box2 {
 
 .single-skill span {
     font-size: 1.6rem;
+    color: darkgoldenrod;
 }
 
 .bar-side {
-    background: #111;
+    background: #ffffff;
     height: 1rem;
     border-radius: 50rem;
     position: relative;
     overflow: hidden;
+    
+    border: 0.1rem solid #000;
 }
 
 .bar {
     position: absolute;
     height: 100%;
-    background: #ff00ee;
+    background: #727D73;
 }
 
 .bar-1 {
@@ -757,10 +779,11 @@ section.start-animation .skill-box2 {
 .bar-6 {
     width: 60%;
 }
-
+.filterbtncol, option{
+    color: #0f0a0a;
+}
 .filter-buttons {
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, .1);
     font-size: 1.3rem;
     margin-bottom: 3rem;
     font-weight: 600;
@@ -805,9 +828,13 @@ section.start-animation .filter-buttons {
     text-align: center;
 }
 
+.project-item:hover{
+    color: darkgoldenrod;
+}
+
 .project-item {
     padding: 1.5rem;
-    border: .2rem solid #ff00ee;
+    border: .2rem solid #727D73;
     background: rgba(255, 255, 255, .1);
     border-radius: .5rem;
     margin-bottom: 2rem;
@@ -815,6 +842,8 @@ section.start-animation .filter-buttons {
     font-size: 1.7rem;
     letter-spacing: .05rem;
     margin: .5rem 0;
+    color: grey;
+    transition: 250ms ;
 }
 
 .project-item:nth-child(1) {
@@ -886,12 +915,13 @@ section.start-animation .testimonial-slider {
 
 .testimonial {
     display: none;
+    color: grey;
     font-size: 1.2rem;
     padding: 15px;
     border-radius: 10px;
     background: rgba(255, 0, 238, 0.1);
     padding: 1.5rem;
-    border: .2rem solid #ff00ee;
+    border: .2rem solid #AAB99A;
     background: rgba(255, 255, 255, .1);
     border-radius: .5rem;
     margin-bottom: 2rem;
@@ -917,6 +947,7 @@ section form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    color: grey;
 }
 
 input:nth-child(1) {
@@ -944,16 +975,17 @@ textarea {
     width: 100%;
     padding: 1.5rem;
     background: rgba(255, 255, 255, .1);
-    border: .2rem solid rgba(255, 255, 255, .3);
+    border: .2rem solid #aab99a7a;
     outline: none;
     backdrop-filter: blur(10px);
-    filter: drop-shadow(0 0 100px #ff00ee);
+    filter: drop-shadow(0 0 100px #59a804);
     border-radius: .8rem;
     gap: 2.5rem;
     margin: .7rem 0;
     transition: .3s ease;
     opacity: 0;
     transform: translateY(100px);
+    color: grey;
 }
 
 section.start-animation textarea {
@@ -972,12 +1004,12 @@ input::placeholder {
 
 input:focus,
 input:valid {
-    border: .2rem solid #ff00ee;
+    border: .2rem solid #727D73;
 }
 
 textarea:focus,
 textarea:valid {
-    border: .2rem solid #ff00ee;
+    border: .2rem solid #727D73;
 }
 
 textarea {
@@ -988,6 +1020,7 @@ textarea {
     margin-top: 2rem;
     cursor: pointer;
     filter: none;
+    background-color: #AAB99A;
     border: .2rem solid rgba(255, 255, 255, .3);
     border: .2rem solid rgba(255, 255, 255, .3);
 }
@@ -998,15 +1031,15 @@ section.start-animation .btn {
 }
 
 .contact .btn:hover {
-    background: #ff00ee;
-    box-shadow: 0 0 .3rem #ff00ee,
-        0 0 .7rem #ff00ee;
+    background: #AAB99A;
+    box-shadow: 0 0 .3rem #727D73,
+        0 0 .7rem #727D73;
 }
 
 /* footer */
 
 footer {
-    background: #080707;
+    background: #D0DDD0;
     padding: 2rem 9%;
     display: flex;
     justify-content: space-between;
@@ -1016,6 +1049,7 @@ footer {
 
 footer p {
     font-size: 1.6rem;
+    color: grey;
 }
 
 footer i {
@@ -1023,8 +1057,8 @@ footer i {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: #ff00ee;
-    color: #0f0a0a;
+    background: #AAB99A;
+    color: grey;
     border-radius: 50%;
     font-size: 2.4rem;
 }
