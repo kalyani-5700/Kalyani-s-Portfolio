@@ -1142,13 +1142,19 @@ footer i {
         width: 20rem;
         height: 20rem;
     }
+    .header {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 @media(max-width:450px) {
     html {
         font-size: 50%;
     }
-
+    .logo{
+        font-size: 1rem;
+    }
     .input-box input {
         width: 100%;
     }
