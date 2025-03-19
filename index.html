@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,8 +13,8 @@
 <body>
     <!-- *************************Navbar************************* -->
     <header class="header">
-        <a href="#" class="logo">Kalyani's Portfolio</a>
-        <i class='bx bx-menu' id="menu" style='color:#ffffff'></i>
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu" style='color:#000000'></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About Me</a>
@@ -31,18 +32,18 @@
             <div class="text-animation">
                 <h2>Web Developer</h2>
             </div>
-            <p>Experienced in database management and web technologies, with a focus on building efficient and dynamic applications.</p>
+            <p>Welcome to my web developer portfolio! I'm Kalyani, a skilled and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites.</p>
             <div>
                 <h2 id="greeting"></h2>
             </div>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/kalyani-uparkar-a02bb1281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class='bx bxl-linkedin' style="--vlr:7"></i></a>
                 <a href="https://github.com/kalyani-5700" target="_blank"><i class='bx bxl-github' style="--vlr:8"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' style="--vlr:9"></i></a>
+                <a href="https://www.instagram.com/_kalyani.uparkar_/" target="_blank"><i class='bx bxl-instagram' style="--vlr:9"></i></a>
             </div>
               <a href="https://drive.google.com/uc?export=download&id=15myXDq3LDPxPKLIoR9CdTV3NguScP7OI"><button class="cv">Download CV</button></a>
             </div>
-        <img src="portimage.png" alt="">
+        <img src="portimage.png" class="hero-image" alt="Hero Image">
     </section>
     <!-- *************************About Section************************* -->
     <section class="about" id="about">
@@ -169,10 +170,11 @@
     <!-- *************************Project Section************************* -->
     <section id="projects" class="projects">
         <h2 class="title">Projects</h2>
-        <select style="background: #A855f7" class="active">All</option>
-            <option data-filter="web">Web Development</option>
-            <option data-filter="mobile">Mobile Apps</option>
-            <option data-filter="uiux">UI/UX Design</option>
+        <select id="filterSelect" style="background: #A855f7">
+            <option value="all" selected>All</option>
+            <option value="web">Web Development</option>
+            <option value="mobile">Mobile Apps</option>
+            <option value="uiux">UI/UX Design</option>
         </select>
         <div class="project-list">
             <div class="project-item web">Portfolio Website</div>
@@ -183,6 +185,9 @@
             <div class="project-item uiux">UI Design for E-Commerce</div>
         </div>
     </section>
+    
+    
+    
 
     <!-- ************************* Testimonials Section************************* -->
     <section id="testimonials" class="testimonials">
